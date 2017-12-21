@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Clover</string>
+    <string name="title_movie">Movie</string>
+    <string name="title_clover">Clover</string>
+    <string name="title_photo">Photo</string>
+
+    <string name="guide_title1">MOVIE</string>
+    <string name="guide_title2">ARTICLE</string>
+    <string name="guide_title3">PHOTO</string>
+    <string name="transition_photo">TRANSITION</string>
+    <string name="guide_content1">耶耶耶耶耶耶耶耶耶</string>
+    <string name="guide_content2">卡卡卡卡卡</string>
+    <string name="guide_content3">叭叭叭叭叭叭</string>
+
+
+    <string name="go">GO</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="search">Search</string>
+    <string name="like">LIKE</string>
+    <string name="history">HISTORY</string>
+    <string name="download">DOWNLOAD</string>
+    <string name="space">SPACE</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="input_phone_error">请输入11位手机号码</string>
+    <string name="input_code_error">请输入6位验证码</string>
+    <string name="input_password_error">请输入8-12位密码</string>
+    <string name="out_login">LOGOUT</string>
+    <string name="birthday">BIRTHDAY</string>
+    <string name="username">USERNAME</string>
+    <string name="nickname">NICKNAME</string>
+
+
+</resources>

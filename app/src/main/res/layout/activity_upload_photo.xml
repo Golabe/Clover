@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:src="@drawable/ic_back" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cvAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:src="@mipmap/ic_launcher_round"
+        app:civ_border_color="#ca000000"
+        app:civ_border_width="8dp" />
+
+    <EditText
+        android:layout_marginBottom="5dp"
+        android:background="@null"
+        android:id="@+id/edInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvType"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="输入想说的话"
+        android:textColor="@android:color/white"
+        android:textColorHint="#c1f5efef"
+        android:maxLength="50"
+        android:textSize="@dimen/text_size_16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvLength"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/btnPush"
+        android:textSize="@dimen/text_size_14sp"
+        android:textColor="#ccc"
+        android:text="0/50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPush"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="# type"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_14sp"
+        android:textStyle="bold" />
+    <TextView
+
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPush"
+        android:layout_marginBottom="50dp"
+        android:layout_toRightOf="@+id/tvType"
+        android:layout_marginLeft="20dp"
+        android:text="# where you are?"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_14sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnPush"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/selector_push_button"
+        android:text="PUSH"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <ProgressBar
+        android:max="100"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/pbProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        />
+
+
+</RelativeLayout>

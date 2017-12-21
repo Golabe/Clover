@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.yoogr.clover.mvp.ui.activity.GuideActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@android:color/white"
+        android:elevation="@dimen/elevation_4dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <!--跳过-->
+        <TextView
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/skip"
+            android:textColor="#000"
+            android:textSize="@dimen/text_size_12sp"
+            android:textStyle="bold" />
+
+
+        <!--小圆点-->
+        <LinearLayout
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/dot_focus"
+                android:id="@+id/dot_1"
+                android:layout_marginRight="20dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+
+            <ImageView
+                android:id="@+id/dot_2"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+
+            <ImageView
+                android:id="@+id/dot_3"
+                android:layout_marginLeft="20dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+
+        <!--下一页-->
+        <TextView
+            android:text="@string/next"
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000"
+            android:textSize="@dimen/text_size_12sp" />
+    </RelativeLayout>
+</LinearLayout>

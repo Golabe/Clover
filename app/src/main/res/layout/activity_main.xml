@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.yoogr.clover.mvp.ui.activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+
+        android:background="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.yoogr.clover.widget.SearchLayout
+            android:fitsSystemWindows="true"
+            android:id="@+id/searchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+
+        </cn.yoogr.clover.widget.SearchLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </FrameLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="@dimen/margin"
+        android:elevation="8dp"
+        android:src="@drawable/ic_add"
+        app:pressedTranslationZ="16dp" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:menu="@menu/navigation" />
+    <!--android:background="?android:attr/windowBackground"-->
+
+</android.support.design.widget.CoordinatorLayout>

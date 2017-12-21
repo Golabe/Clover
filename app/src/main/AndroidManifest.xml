@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.yoogr.clover">
+
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SOCIAL_STREAM" />
+    <!-- 基础模块（必须加入以下声明）START -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 基础模块 END -->
+    <application
+        android:name=".app.CloverApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_clover_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_clover_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".mvp.ui.activity.SplashActivity"
+            android:theme="@style/AppTheme.SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mvp.ui.activity.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity
+            android:name=".mvp.ui.activity.WelcomeActivity"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".mvp.ui.activity.GuideActivity"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".mvp.ui.activity.SearchActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".mvp.ui.activity.LoginActivity" />
+        <activity android:name=".mvp.ui.activity.AuthorActivity" />
+        <activity android:name=".mvp.ui.activity.PhotoDetailsActivity" />
+        <activity android:name=".mvp.ui.activity.UpdateUserActivity" />
+        <activity android:name=".mvp.ui.activity.SpaceActivity" />
+        <activity
+            android:name=".mvp.ui.activity.CustomCameraActivity"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".mvp.ui.activity.LoveActivity"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <!-- 反馈组件（需要加入以下声明）START -->
+        <activity android:name="com.avos.avoscloud.feedback.ThreadActivity" />
+        <!-- 反馈组件 END -->
+        <activity
+            android:name=".mvp.ui.activity.UploadPhotoActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".mvp.ui.activity.MovieDetailsActivity"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".mvp.ui.activity.UploadVideoActivity"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity android:name=".mvp.ui.activity.CloverEditActivity" />
+        <activity android:name=".mvp.ui.activity.CloverDetailsActivity" />
+        <activity android:name=".mvp.ui.activity.EditUserInfoActivity"/>
+
+    </application>
+
+</manifest>

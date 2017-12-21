@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:text="DOWNLOAD"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16sp"
+        android:textStyle="bold" />
+
+    <cn.yoogr.clover.widget.WaveView
+        android:id="@+id/waveView"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_up_version_download"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="CANCEL"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_12sp" />
+</LinearLayout>

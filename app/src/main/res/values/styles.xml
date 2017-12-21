@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/home_bottom_checked</item>
+        <item name="colorAccent">@color/home_bottom_checked</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--全屏-->
+    <style name="AppTheme.Fullscreen">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--闪屏页主题-->
+    <style name="AppTheme.SplashTheme">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--透明主题-->
+
+    <style name="AppTheme.Translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
+    <style name="AppTheme.EditButton">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:layout_width">@dimen/icon_size</item>
+        <item name="android:layout_height">@dimen/icon_size</item>
+
+    </style>
+
+
+
+</resources>
